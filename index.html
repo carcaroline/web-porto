@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#ffb3b0",
+          "surface-container-highest": "#f2dfd1",
+          "on-secondary-fixed": "#052013",
+          "tertiary": "#432c00",
+          "on-secondary": "#ffffff",
+          "on-tertiary-container": "#d5af76",
+          "on-secondary-container": "#4d6957",
+          "inverse-primary": "#ffb3b0",
+          "surface-container-low": "#fff1e8",
+          "outline": "#877271",
+          "surface-tint": "#984543",
+          "on-secondary-fixed-variant": "#314d3c",
+          "on-primary-fixed": "#3f0207",
+          "surface": "#fff8f5",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed-variant": "#5d4213",
+          "secondary-fixed-dim": "#afceb9",
+          "surface-bright": "#fff8f5",
+          "tertiary-container": "#5d4213",
+          "error-container": "#ffdad6",
+          "on-primary-fixed-variant": "#7a2e2e",
+          "error": "#ba1a1a",
+          "primary-container": "#7a2e2e",
+          "secondary": "#496553",
+          "primary": "#5c181a",
+          "on-error": "#ffffff",
+          "on-surface-variant": "#544241",
+          "outline-variant": "#dac1bf",
+          "primary-fixed": "#ffdad8",
+          "inverse-on-surface": "#ffeee1",
+          "on-tertiary-fixed": "#281800",
+          "surface-container-high": "#f8e5d6",
+          "on-surface": "#231a11",
+          "surface-container": "#feeadc",
+          "on-background": "#231a11",
+          "background": "#fff8f5",
+          "inverse-surface": "#392e25",
+          "tertiary-fixed": "#ffdeae",
+          "secondary-container": "#c8e7d1",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#cbead4",
+          "tertiary-fixed-dim": "#e8c086",
+          "surface-container-lowest": "#ffffff",
+          "surface-dim": "#e9d7c8",
+          "on-error-container": "#93000a",
+          "surface-variant": "#f2dfd1",
+          "on-primary-container": "#ff9a96"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "margin": "3.5rem",
+          "space-xl": "3rem",
+          "margin-mobile": "1.25rem",
+          "space-lg": "1.75rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "label-caps": [
+            "EB Garamond"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-chapter": [
+            "EB Garamond"
+          ],
+          "body-sm": [
+            "EB Garamond"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "meta-folio": [
+            "EB Garamond"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "body-lead": [
+            "EB Garamond"
+          ],
+          "body-md": [
+            "EB Garamond"
+          ]
+        },
+        "fontSize": {
+          "label-caps": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-chapter": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.18em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "500"
+            }
+          ],
+          "meta-folio": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lead": [
+            "20px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "18px",
+            {
+              "lineHeight": "31px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-tertiary-fixed selection:text-tertiary"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1120px] mx-auto px-gutter flex items-center justify-between"><a class="flex flex-col group text-left" data-path="profile" href="#"><span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors tracking-tight">Caroline Sonya Renata</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-opacity-80">Acquisition Editor · Sastra &amp; Humaniora</span></a><nav class="hidden xl:flex items-center gap-gutter" data-active-classes="text-primary font-semibold border-b border-primary pb-0.5"><a aria-current="page" class="uppercase transition-colors text-primary font-semibold border-b border-primary pb-0.5" data-path="profile" href="#">Profile</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="philosophy" href="#">Philosophy</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="bookshelf" href="#">Bookshelf</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="learning-showcase" href="#">Learning Showcase</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="testimonials" href="#">Testimonials</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="manuscript-guidelines" href="#">Manuscript Guidelines</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT hover:bg-secondary hover:text-on-secondary transition-colors duration-200" data-path="submit-manuscript-contact" href="#">Submit Manuscript / Contact</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow -->
+<div class="relative w-full max-w-[1120px] mx-auto px-gutter">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-[720px] h-[280px] bg-gradient-to-b from-primary/5 via-tertiary-fixed/15 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+</div>
+<!-- CHAPTER I: HERO (BOOK COVER / TITLE PAGE) -->
+<section class="relative w-full py-space-xl overflow-hidden">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<!-- Title Page Monogram & Ornate Framing -->
+<div class="relative bg-surface-container-lowest shadow-xl rounded-DEFAULT px-8 py-16 md:px-20 md:py-24 text-center max-w-[960px] mx-auto overflow-hidden">
+<!-- Archival Edge Inset Layer -->
+<div class="absolute inset-3 bg-surface-container-low/40 rounded-DEFAULT pointer-events-none"></div>
+<div class="absolute inset-5 bg-transparent rounded-DEFAULT pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center">
+<!-- Chapter Marker -->
+<div class="flex items-center justify-center gap-space-md mb-6">
+<span class="w-12 h-px bg-tertiary-container/30"></span>
+<span class="text-tertiary-container font-headline-chapter text-headline-chapter uppercase tracking-[0.25em]">
+              ❦ Chapter I · Title Page ❦
+            </span>
+<span class="w-12 h-px bg-tertiary-container/30"></span>
+</div>
+<!-- Colophon Monogram Badge -->
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center mb-8 shadow-sm group">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:scale-105 transition-transform duration-300">CSR</span>
+</div>
+<!-- Main Name (Serif Hero Headline) -->
+<h1 class="font-display-lg text-display-lg md:text-[56px] md:leading-[64px] text-primary tracking-tight mb-4 max-w-[760px]">
+            Caroline Sonya Renata
+          </h1>
+<!-- Subtitle / Title -->
+<p class="font-label-caps text-label-caps uppercase tracking-[0.22em] text-on-surface-variant/90 mb-8">
+            Acquisition Editor &amp; Literary Curator
+          </p>
+<!-- Brass Divider Fleur -->
+<div class="flex items-center justify-center gap-3 w-48 mb-8 opacity-75">
+<span class="h-px flex-1 bg-tertiary-container/40"></span>
+<span class="text-primary text-sm select-none">❖</span>
+<span class="h-px flex-1 bg-tertiary-container/40"></span>
+</div>
+<!-- Central Quote (Philosophical Statement) -->
+<blockquote class="font-body-lead text-body-lead md:text-[22px] md:leading-[36px] text-on-surface italic max-w-[620px] mb-4">
+            “I look for the stories the world has not yet had the chance to write.”
+          </blockquote>
+<!-- Tagline Subtext -->
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[500px] mb-10">
+            Finding the raw manuscripts, bold intellects, and overlooked narratives that possess the enduring weight to become canonical books.
+          </p>
+<!-- Dual CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<a class="inline-flex items-center justify-center gap-2 px-space-lg py-3 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-md hover:bg-secondary hover:text-on-secondary transition-all duration-300" href="#bookshelf">
+<span class="material-symbols-outlined text-[17px]">auto_stories</span>
+              Explore Works
+            </a>
+<a class="inline-flex items-center justify-center gap-2 px-space-lg py-3 bg-surface-container text-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm hover:bg-primary-container hover:text-on-primary transition-all duration-300" href="#submission-guidelines">
+<span class="material-symbols-outlined text-[17px]">edit_note</span>
+              Submit a Manuscript / Contact
+            </a>
+</div>
+<!-- Micro Metas / Imprint Notice -->
+<div class="mt-14 pt-8 w-full max-w-[420px] flex items-center justify-between text-on-surface-variant/75 font-meta-folio text-meta-folio uppercase tracking-widest">
+<span>Vol. XII · Desk Edition</span>
+<span>✦</span>
+<span>Jakarta &amp; London</span>
+<span>✦</span>
+<span>Folio No. 01</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER II: PREFACE (ABOUT & METRICS) -->
+<section class="w-full py-space-xl bg-surface-container-low/50" id="preface">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<!-- Section Header -->
+<div class="text-center max-w-[680px] mx-auto mb-16">
+<div class="flex items-center justify-center gap-space-md mb-2">
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+<span class="font-headline-chapter text-headline-chapter text-tertiary-container uppercase tracking-widest">Chapter II · Preface</span>
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">The Editor’s Craft &amp; Calling</h2>
+</div>
+<!-- Two-column Editorial Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+<!-- Left: Portrait Plate with Bookplate Framing -->
+<div class="lg:col-span-5 flex flex-col items-center">
+<div class="relative w-full max-w-[380px] bg-surface-container-lowest p-4 rounded-DEFAULT shadow-lg">
+<div class="overflow-hidden rounded-DEFAULT aspect-[4/5] relative">
+<img class="w-full h-full object-cover grayscale-[15%] contrast-[105%] hover:scale-[1.02] transition-transform duration-700" data-alt="Fine art editorial portrait of senior female acquisition editor Caroline Sonya Renata in a wood-paneled archival library, warm ambient lamp lighting, wearing an ivory silk blouse and deep burgundy blazer, examining a hardcover book proof with scholarly grace and thoughtful intensity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUZoHi0ANobnjOkyEp6ZM7YAZQEBP95s_v9VRpHvTyQNPpBaCEc9c1wzm6plxF4lo3A0BswpDrWn93Tdnakm8iVH52TKLnOozlKdkedg8jqsKv3d_tuVKPdNh4il0FmBX4dvnH8xlpEVeKdpQYFT2aRKvdPfSeVZSxqxSAUgZIad8UbNfUM13HHBe9ziNcYnSc0q3dI6UejKAzr3mRjoxzfkPR3DawgXNXno2IwdIx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
+</div>
+<!-- Caption Plaque -->
+<div class="pt-4 pb-1 text-center">
+<p class="font-headline-sm text-sm text-primary tracking-wide">Caroline Sonya Renata</p>
+<p class="font-label-caps text-[11px] text-on-surface-variant uppercase tracking-widest">Senior Acquisition Editor · Literature &amp; Humanities</p>
+</div>
+</div>
+</div>
+<!-- Right: The Personal Preface Narrative -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="prose font-body-lead text-body-lead text-on-surface leading-relaxed text-justify space-y-6">
+<p>
+<span class="float-left text-primary font-headline-lg text-[64px] leading-[54px] font-bold pr-4 pt-1 select-none">F</span>
+              or over twelve years, my days have begun and concluded with the rustle of loose-leaf galley proofs, annotated marginalia, and the exhilarating thrill of opening an unsolicited draft that possesses unmistakable genius. Acquisition is fundamentally an act of quiet faith: looking past raw syntax, structural hesitation, and unfinished codas to perceive the transcendent architecture of an enduring book.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              My editorial sanctuary is built upon classical rigor and cultural empathy. I shepherd manuscripts across the delicate bridge that connects an author’s solitary consciousness with the collective memory of the public library. Whether unearthing lyrical fiction from maritime Southeast Asia, commissioning investigative narrative history, or negotiating global subsidiary rights at Frankfurt and London, my compass remains unswerving: clarity, resonance, and prose that demands to be read a generation hence.
+            </p>
+</div>
+<!-- Editorial Signature / Device -->
+<div class="mt-8 flex items-center justify-between pt-6 max-w-[480px]">
+<div class="flex items-center gap-3">
+<span class="text-tertiary-container text-xl">❧</span>
+<span class="font-body-sm italic text-on-surface-variant">In curatura veritas — In curation, truth.</span>
+</div>
+<span class="font-meta-folio text-meta-folio text-on-surface-variant uppercase tracking-wider">Jakarta, 2025</span>
+</div>
+</div>
+</div>
+<!-- Refined Metric Cards (Three Counters) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Metric 01 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md flex flex-col items-center text-center hover:bg-surface-container transition-colors duration-300">
+<span class="font-display-lg text-[44px] leading-tight text-primary mb-1">50+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-2">Titles Acquired</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[240px]">
+            Literary fiction, narrative non-fiction, memoirs, and philosophical monographs.
+          </p>
+</div>
+<!-- Metric 02 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md flex flex-col items-center text-center hover:bg-surface-container transition-colors duration-300">
+<span class="font-display-lg text-[44px] leading-tight text-primary mb-1">12</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-2">Years in Publishing</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[240px]">
+            International rights representation, commissioning, and deep developmental triage.
+          </p>
+</div>
+<!-- Metric 03 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md flex flex-col items-center text-center hover:bg-surface-container transition-colors duration-300">
+<span class="font-display-lg text-[44px] leading-tight text-primary mb-1">08</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-2">National Awards</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[240px]">
+            Kusala Sastra Khatulistiwa recipients, Asian Booker shortlists, and multi-edition reprints.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER III: ACQUISITION PHILOSOPHY -->
+<section class="w-full py-space-xl bg-surface" id="philosophy">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<!-- Section Chapter Banner -->
+<div class="text-center max-w-[720px] mx-auto mb-16">
+<div class="flex items-center justify-center gap-space-md mb-2">
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+<span class="font-headline-chapter text-headline-chapter text-tertiary-container uppercase tracking-widest">Chapter III · Acquisition Philosophy</span>
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Table of Contents of Taste</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Publishing is neither mere commerce nor cloistered indulgence. It is the architectural preservation of human insight.
+        </p>
+<!-- Active Genre Badges (Taxonomy Chips) -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-8">
+<span class="px-3 py-1.5 bg-surface-container text-secondary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm">
+            Contemporary Literary Fiction
+          </span>
+<span class="px-3 py-1.5 bg-surface-container text-secondary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm">
+            Narrative Nonfiction &amp; History
+          </span>
+<span class="px-3 py-1.5 bg-surface-container text-secondary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm">
+            Thought Leadership &amp; Essays
+          </span>
+<span class="px-3 py-1.5 bg-surface-container text-secondary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm">
+            Speculative Fiction with Social Weight
+          </span>
+</div>
+</div>
+<!-- The Four Touchstones of Evaluation -->
+<div class="mb-20">
+<h3 class="font-headline-md text-headline-md text-primary text-center mb-10 flex items-center justify-center gap-3">
+<span>The Four Touchstones of Evaluation</span>
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Touchstone 01 -->
+<div class="bg-surface-container-low p-6 rounded-DEFAULT shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-meta-folio text-meta-folio text-tertiary-container font-bold tracking-widest uppercase">Canone I</span>
+<span class="material-symbols-outlined text-primary text-2xl">record_voice_over</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Authorial Voice</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Distinctive syntactic cadence, unfeigned authenticity, and an indelible musicality of prose that refuses to resemble any other contemporary pen.
+              </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-caps uppercase text-secondary tracking-widest">
+              Tone &amp; Vitality
+            </div>
+</div>
+<!-- Touchstone 02 -->
+<div class="bg-surface-container-low p-6 rounded-DEFAULT shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-meta-folio text-meta-folio text-tertiary-container font-bold tracking-widest uppercase">Canone II</span>
+<span class="material-symbols-outlined text-primary text-2xl">psychology_alt</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Thematic Originality</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                A fresh sociological, historical, or intimate human vantage point that reframes stale discourses without collapsing into polemic.
+              </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-caps uppercase text-secondary tracking-widest">
+              Intellectual Urgency
+            </div>
+</div>
+<!-- Touchstone 03 -->
+<div class="bg-surface-container-low p-6 rounded-DEFAULT shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-meta-folio text-meta-folio text-tertiary-container font-bold tracking-widest uppercase">Canone III</span>
+<span class="material-symbols-outlined text-primary text-2xl">hourglass_empty</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Longevity &amp; Endurance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Evergreen resonance. We evaluate whether the text will retain its psychological potency when plucked from a personal library a decade into the future.
+              </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-caps uppercase text-secondary tracking-widest">
+              Backlist Endurance
+            </div>
+</div>
+<!-- Touchstone 04 -->
+<div class="bg-surface-container-low p-6 rounded-DEFAULT shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-meta-folio text-meta-folio text-tertiary-container font-bold tracking-widest uppercase">Canone IV</span>
+<span class="material-symbols-outlined text-primary text-2xl">architecture</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Rigorous Architecture</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Impeccable structural coherence, factual discipline, and deliberate narrative pacing capable of bearing prolonged critical examination.
+              </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-caps uppercase text-secondary tracking-widest">
+              Structural Integrity
+            </div>
+</div>
+</div>
+</div>
+<!-- The Journey: From Manuscript Desk to Bookshelf -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-DEFAULT shadow-lg">
+<div class="text-center mb-10">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Methodology &amp; Lifecycle</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">The Journey: From Manuscript Desk to Bookshelf</h3>
+</div>
+<!-- Horizontal Step Sequence -->
+<div class="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Horizontal linking bar (desktop only) -->
+<div class="hidden md:block absolute top-7 left-12 right-12 h-0.5 bg-surface-container-highest z-0"></div>
+<!-- Step 01 -->
+<div class="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-primary mb-4 shadow-sm">
+              01
+            </div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary mb-1">Phase I</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">First Reader &amp; Editorial Triage</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Initial structural assessment, voice evaluation, and line vitality review against contemporary publishing terrain.
+            </p>
+</div>
+<!-- Step 02 -->
+<div class="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-primary mb-4 shadow-sm">
+              02
+            </div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary mb-1">Phase II</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Acquisition Pitch &amp; P&amp;L Board</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Comprehensive editorial justification, print-run forecasting, subsidiary rights calculus, and board consensus.
+            </p>
+</div>
+<!-- Step 03 -->
+<div class="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-primary mb-4 shadow-sm">
+              03
+            </div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary mb-1">Phase III</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Rights &amp; Contract Negotiation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Fostering equitable agreements with literary agencies, translation co-editions, and domestic royalties.
+            </p>
+</div>
+<!-- Step 04 -->
+<div class="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center font-headline-sm text-on-primary mb-4 shadow-sm">
+              04
+            </div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary mb-1">Phase IV</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Substantive Developmental Editing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Collaborative multi-pass developmental editing, line honing, and binding consultation through final press release.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER III.B: EDITORIAL SPECTRUM (SKILLS & COMPETENCIES) -->
+<section class="w-full py-space-xl bg-surface-container-high/40">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<div class="text-center max-w-[680px] mx-auto mb-14">
+<span class="font-headline-chapter text-headline-chapter text-tertiary-container uppercase tracking-widest">Editorial Capabilities</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">The Editorial Spectrum</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Bridging creative intuition with institutional acumen across every facet of publishing.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">ink_pen</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Manuscript Curation &amp; Line Analysis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Forensic appraisal of sentence architecture, tone consistency, rhythm, and narrative tempo in dense raw submissions.
+          </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Commercial Viability &amp; Market Evaluation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Data-grounded profit and loss analysis, comp-title benchmarking, and channel positioning across retail and institutional buyers.
+          </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">gavel</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Rights, Translations &amp; Licensing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Structuring multi-territory copyright agreements, translation subsidiary licensing, audio adaptations, and film options.
+          </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Author Relations &amp; Stewardship</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Deep pastoral collaboration with debut novelists and celebrated luminaries, safeguarding authorial voice through critical revisions.
+          </p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">travel_explore</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Global Literary Trends &amp; Book Fairs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Active scouting presence at Frankfurt, London, and Bologna book fairs, anticipating shifts in worldwide readership and thematic appetites.
+          </p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Substantive Developmental Editing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Macroscopic restructuring, resequencing of chapters, thematic sharpening, and prose refining for publishable perfection.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER IV: BOOKSHELF & TRACK RECORD (FEATURED WORKS) -->
+<section class="w-full py-space-xl bg-surface" id="bookshelf">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<!-- Section Chapter Banner -->
+<div class="text-center max-w-[720px] mx-auto mb-16">
+<div class="flex items-center justify-center gap-space-md mb-2">
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+<span class="font-headline-chapter text-headline-chapter text-tertiary-container uppercase tracking-widest">Chapter IV · The Curated Bookshelf</span>
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-3">Landmark Acquisitions in Print</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Selected publications nurtured from raw draft through line revisions to public acclaim and international editions.
+        </p>
+</div>
+<!-- Responsive Grid of 4 Rich Book Presentation Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Book 1 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-md overflow-hidden flex flex-col justify-between group">
+<div class="p-6 md:p-8 flex flex-col sm:flex-row gap-6">
+<!-- Simulated Book Cover with Left Edge Spine Gradient -->
+<div class="relative w-full sm:w-44 aspect-[1/1.5] shrink-0 bg-primary-container rounded-DEFAULT shadow-md overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Exquisite hardcover book cover of 'Echoes of the Archipelago' by Julian Pramana, featuring deep indigo and gold foil woodcut waves and traditional Indonesian navigational stars, elegant letterpress typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1O7v_cRfWsuSd4oU0CWCCh-e5LH1Vkqbu340L5ntWkTVwc6yWdV7vGq9RzT8ggEAulIOd3O2dYK90vkwOSAZlgaK3vjBVygOUo8bnAuwmxdfW4XXyHDYHFrcAfxb1SEmo42kMpWPUzjD2tE4m0_tKGGcU926uUG-xLAxh6TZ1F6WL-GWIuEIRe28QOcynx_uq2R3oObhlnDBlcUWHVLlQBqDXWiEcOCgNV60IawV"/>
+<!-- Left Spine Shadow -->
+<div class="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/40 to-transparent pointer-events-none"></div>
+</div>
+<!-- Book Meta -->
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-caps text-[11px] uppercase tracking-wider rounded-DEFAULT">
+                    Fiction · 2020
+                  </span>
+<span class="text-xs text-primary font-bold">★ National Award</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight mb-1">
+                  Echoes of the Archipelago
+                </h3>
+<p class="font-body-sm italic text-on-surface-variant mb-4">by Julian Pramana</p>
+<div class="space-y-1 text-xs font-meta-folio uppercase tracking-wider text-on-surface-variant/80 mb-4">
+<p><span class="font-bold text-on-surface">Curatorial Role:</span> Acquisition Editor &amp; Line Editor</p>
+<p><span class="font-bold text-on-surface">Accolade:</span> National Literary Award Winner · 3rd Edition</p>
+</div>
+</div>
+<!-- Note Toggle Button -->
+<button class="inline-flex items-center gap-1.5 text-xs font-label-caps uppercase tracking-wider text-primary hover:text-secondary transition-colors cursor-pointer text-left" onclick="toggleDossier('note-1')">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span>Read Editor’s Acquisition Note</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-note-1">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Expandable Internal Dossier Note -->
+<div class="hidden bg-surface-container-low px-8 py-6 relative" id="note-1">
+<div class="flex items-start justify-between mb-4">
+<div>
+<span class="font-label-caps text-[11px] uppercase text-tertiary-container tracking-widest font-bold">Catatan Akuisisi · Ref. 2020-EP</span>
+<h4 class="font-headline-sm text-sm text-primary">Julian Pramana — "Echoes of the Archipelago"</h4>
+</div>
+<span class="inline-block transform -rotate-3 px-2 py-1 bg-primary/10 text-primary font-label-caps text-[10px] uppercase font-bold tracking-widest shadow-sm">
+                Approved for Publication
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">
+<strong>Premis Naskah:</strong> An epic intergenerational saga tracking maritime trade and indigenous memory through the Sunda Strait from 1883 through the independence struggle.
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>Alasan Kurasi:</strong> Acquired after a fierce auction. Julian’s lyrical prose possesses the mythic authority of Pramoedya Ananta Toer paired with modernist sensory precision. The manuscript underwent two substantial rounds of character trim to quicken its second act.
+            </p>
+</div>
+</div>
+<!-- Book 2 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-md overflow-hidden flex flex-col justify-between group">
+<div class="p-6 md:p-8 flex flex-col sm:flex-row gap-6">
+<div class="relative w-full sm:w-44 aspect-[1/1.5] shrink-0 bg-primary-container rounded-DEFAULT shadow-md overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Historical hardcover book cover of 'The Quiet Cartographer' by Dr. Evelyn S. Ward, vintage sepia maritime map with delicate botanical illustrations and antique gold roman numerals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcqfyORGKBzm4JEFIWyPouJlmw0vYxa9hFNxHnQ4jz3YN_6k4jwqhAFeFfdRJp9QFG-Yjl9hNVZfA_JXsRsGVKE900Zeb7dEjmbvQ-6GVTBDxIfZIN5_j5xrp9qPrTukixTUYEVvw0uFhuH2YkyT2KwGB-l18J-CSLwk_Zc-E-4mgW1-xDNNvRRMTiDzIPRnYRNJ9zqMEb8pvP5qJ3d6xpxHB86mzUfqygq906IkMl"/>
+<div class="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/40 to-transparent pointer-events-none"></div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-caps text-[11px] uppercase tracking-wider rounded-DEFAULT">
+                    Nonfiction · 2021
+                  </span>
+<span class="text-xs text-secondary font-bold">4th Print Run</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight mb-1">
+                  The Quiet Cartographer
+                </h3>
+<p class="font-body-sm italic text-on-surface-variant mb-4">by Dr. Evelyn S. Ward</p>
+<div class="space-y-1 text-xs font-meta-folio uppercase tracking-wider text-on-surface-variant/80 mb-4">
+<p><span class="font-bold text-on-surface">Curatorial Role:</span> Development &amp; Commissioning Editor</p>
+<p><span class="font-bold text-on-surface">Market Impact:</span> Bestseller · National Nonfiction Shortlist</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 text-xs font-label-caps uppercase tracking-wider text-primary hover:text-secondary transition-colors cursor-pointer text-left" onclick="toggleDossier('note-2')">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span>Read Editor’s Acquisition Note</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-note-2">expand_more</span>
+</button>
+</div>
+</div>
+<div class="hidden bg-surface-container-low px-8 py-6 relative" id="note-2">
+<div class="flex items-start justify-between mb-4">
+<div>
+<span class="font-label-caps text-[11px] uppercase text-tertiary-container tracking-widest font-bold">Catatan Akuisisi · Ref. 2021-EW</span>
+<h4 class="font-headline-sm text-sm text-primary">Dr. Evelyn S. Ward — "The Quiet Cartographer"</h4>
+</div>
+<span class="inline-block transform -rotate-3 px-2 py-1 bg-primary/10 text-primary font-label-caps text-[10px] uppercase font-bold tracking-widest shadow-sm">
+                Approved for Publication
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">
+<strong>Premis Naskah:</strong> The clandestine history of early colonial mapmakers who deliberately altered geographic borders to preserve sacred indigenous mountain sanctuaries.
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>Alasan Kurasi:</strong> Commissioned from an obscure scholarly paper. I guided Dr. Ward to reformat archival transcripts into an intimate personal quest. It became a runaway non-fiction sleeper hit across four reprints.
+            </p>
+</div>
+</div>
+<!-- Book 3 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-md overflow-hidden flex flex-col justify-between group">
+<div class="p-6 md:p-8 flex flex-col sm:flex-row gap-6">
+<div class="relative w-full sm:w-44 aspect-[1/1.5] shrink-0 bg-primary-container rounded-DEFAULT shadow-md overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist modern literary novel cover for 'Before the Ink Dries' by Ratna K. W., featuring an abstract spilled calligraphic sumi ink brushstroke across textured cream mulberry paper, bold refined serif title." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA9nWuigcfbsDLe8wAH_vo-dz7_YEtYFpK0ovwOi0iinvWtWByVVBPKdWJJTmMYP6Q5TDfFxZsxgl-Mp-u7gytdkEn0lPtn7XMQcAuQ6cboEob54ETJkwhkyRhLvxzKNqV3uMhBfrctn3UCmMuUknX0RXtWDqkwaq79AFek9ICD5T5eerVRJ9G_zzC0ngC-Bn1BO9-XGXuOTZ2_jwX-GGqSqbSVnVM41wbY0c2CCof"/>
+<div class="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/40 to-transparent pointer-events-none"></div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-caps text-[11px] uppercase tracking-wider rounded-DEFAULT">
+                    Novella · 2022
+                  </span>
+<span class="text-xs text-primary font-bold">Asian Booker Shortlist</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight mb-1">
+                  Before the Ink Dries
+                </h3>
+<p class="font-body-sm italic text-on-surface-variant mb-4">by Ratna K. W.</p>
+<div class="space-y-1 text-xs font-meta-folio uppercase tracking-wider text-on-surface-variant/80 mb-4">
+<p><span class="font-bold text-on-surface">Curatorial Role:</span> Acquisition &amp; Global Rights Lead</p>
+<p><span class="font-bold text-on-surface">Market Impact:</span> English &amp; French Translation Editions</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 text-xs font-label-caps uppercase tracking-wider text-primary hover:text-secondary transition-colors cursor-pointer text-left" onclick="toggleDossier('note-3')">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span>Read Editor’s Acquisition Note</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-note-3">expand_more</span>
+</button>
+</div>
+</div>
+<div class="hidden bg-surface-container-low px-8 py-6 relative" id="note-3">
+<div class="flex items-start justify-between mb-4">
+<div>
+<span class="font-label-caps text-[11px] uppercase text-tertiary-container tracking-widest font-bold">Catatan Akuisisi · Ref. 2022-RW</span>
+<h4 class="font-headline-sm text-sm text-primary">Ratna K. W. — "Before the Ink Dries"</h4>
+</div>
+<span class="inline-block transform -rotate-3 px-2 py-1 bg-primary/10 text-primary font-label-caps text-[10px] uppercase font-bold tracking-widest shadow-sm">
+                Approved for Publication
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">
+<strong>Premis Naskah:</strong> A taut chamber novel dissecting the last 48 hours of an underground dissident literary journal in Yogyakarta during the 1990s.
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>Alasan Kurasi:</strong> The prose possesses incandescent psychological tension. We acquired rights within 72 hours of receiving the sample. Subsequently presented at Frankfurt where translation rights were secured for French and UK editions.
+            </p>
+</div>
+</div>
+<!-- Book 4 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-md overflow-hidden flex flex-col justify-between group">
+<div class="p-6 md:p-8 flex flex-col sm:flex-row gap-6">
+<div class="relative w-full sm:w-44 aspect-[1/1.5] shrink-0 bg-primary-container rounded-DEFAULT shadow-md overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Scholarly book cover for 'Ecology of the Mind' by T. A. Alatas, forest green cloth book texture with debossed gold geometric leaves and philosophical typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD3Umma5x5a8ru9NGPgl-sage81-b7kusdq3ag8M3SffB00Kl-VWWocHVL7mvyoivpQZpX3nusKNZIdsqlvDwIrZGytNCLTu4zvEpUJH0i7PGtzq0HOIwcNzlSVo5lAXfHa5vpnAtWeRMKLflJguCCVou9Zyy4NtLe32hUdESooJWocdIxv7WldHHaEh5wAHYHfg3hdONg2eOdZcn22nz_MZLK4hbvZyQccwYbthOy"/>
+<div class="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/40 to-transparent pointer-events-none"></div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-caps text-[11px] uppercase tracking-wider rounded-DEFAULT">
+                    Essays · 2023
+                  </span>
+<span class="text-xs text-secondary font-bold">6 International Editions</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight mb-1">
+                  Ecology of the Mind
+                </h3>
+<p class="font-body-sm italic text-on-surface-variant mb-4">by T. A. Alatas</p>
+<div class="space-y-1 text-xs font-meta-folio uppercase tracking-wider text-on-surface-variant/80 mb-4">
+<p><span class="font-bold text-on-surface">Curatorial Role:</span> Conceptual Editor &amp; Commercial Strategist</p>
+<p><span class="font-bold text-on-surface">Market Impact:</span> Translation Rights Sold in 6 Languages</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 text-xs font-label-caps uppercase tracking-wider text-primary hover:text-secondary transition-colors cursor-pointer text-left" onclick="toggleDossier('note-4')">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span>Read Editor’s Acquisition Note</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-note-4">expand_more</span>
+</button>
+</div>
+</div>
+<div class="hidden bg-surface-container-low px-8 py-6 relative" id="note-4">
+<div class="flex items-start justify-between mb-4">
+<div>
+<span class="font-label-caps text-[11px] uppercase text-tertiary-container tracking-widest font-bold">Catatan Akuisisi · Ref. 2023-TA</span>
+<h4 class="font-headline-sm text-sm text-primary">T. A. Alatas — "Ecology of the Mind"</h4>
+</div>
+<span class="inline-block transform -rotate-3 px-2 py-1 bg-primary/10 text-primary font-label-caps text-[10px] uppercase font-bold tracking-widest shadow-sm">
+                Approved for Publication
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">
+<strong>Premis Naskah:</strong> Environmental ethics re-examined through the prism of Southeast Asian animism, communal forestry law, and modern cognitive psychology.
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>Alasan Kurasi:</strong> An essay collection initially deemed ‘uncommercial’ by mainstream houses. We restructured the chapter progression into an organic four-part suite. It is now mandatory reading across three regional university humanities curricula.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER V: LEARNING OUTCOMES SHOWCASE (INTERACTIVE TWO-PAGE SPREAD CAROUSEL) -->
+<section class="w-full py-space-xl bg-surface-container-low/60" id="learning-showcase">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<!-- Section Chapter Banner -->
+<div class="text-center max-w-[720px] mx-auto mb-12">
+<div class="flex items-center justify-center gap-space-md mb-2">
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+<span class="font-headline-chapter text-headline-chapter text-tertiary-container uppercase tracking-widest">Chapter V · My Learning Library</span>
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-3">Academic &amp; Professional Fellowship Records</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Advanced continuous study across global book fair academies, copyright symposia, and university presses.
+        </p>
+<!-- Category Filter Pills -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-8" id="module-filters">
+<button class="mod-pill active px-3.5 py-1.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm transition-colors" onclick="filterModule('all')">
+            All Modules
+          </button>
+<button class="mod-pill px-3.5 py-1.5 bg-surface-container text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm transition-colors" onclick="filterModule('curation')">
+            Curation
+          </button>
+<button class="mod-pill px-3.5 py-1.5 bg-surface-container text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm transition-colors" onclick="filterModule('market')">
+            Market &amp; Trends
+          </button>
+<button class="mod-pill px-3.5 py-1.5 bg-surface-container text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm transition-colors" onclick="filterModule('copyright')">
+            Copyright Law
+          </button>
+<button class="mod-pill px-3.5 py-1.5 bg-surface-container text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-sm transition-colors" onclick="filterModule('digital')">
+            Digital &amp; Media
+          </button>
+</div>
+</div>
+<!-- Realistic Two-Page Open Book Spread Presentation -->
+<div class="relative bg-surface-container-lowest rounded-DEFAULT shadow-2xl overflow-hidden max-w-[1040px] mx-auto">
+<!-- Spine Gutter Shadow in Center (Desktop) -->
+<div class="hidden lg:block absolute inset-y-0 left-1/2 -translate-x-1/2 w-10 bg-gradient-to-r from-black/[0.07] via-black/[0.16] to-black/[0.07] pointer-events-none z-20"></div>
+<!-- Interactive Slide Container (Dynamic JS Powered) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[520px]" id="spread-container">
+<!-- Left Page (Verso - Source & Context) -->
+<div class="p-8 md:p-12 flex flex-col justify-between relative bg-surface-container-lowest">
+<div>
+<!-- Running Page Head -->
+<div class="flex items-center justify-between font-meta-folio text-meta-folio text-on-surface-variant/75 uppercase tracking-widest pb-4 mb-6">
+<span id="page-module-cat">Module 01 · Rights &amp; Law</span>
+<span id="page-institution">Frankfurt Academy</span>
+</div>
+<!-- Module Title & Details -->
+<span class="px-2.5 py-1 bg-surface-container text-tertiary-container font-label-caps text-[11px] uppercase tracking-wider rounded-DEFAULT inline-block mb-3" id="page-date-badge">
+                Frankfurt Rights Masterclass · Autumn 2023
+              </span>
+<h3 class="font-headline-lg text-2xl md:text-3xl text-primary leading-tight mb-4" id="page-title">
+                International Subsidiary Rights &amp; Multi-Territory Licensing
+              </h3>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p id="page-context">
+                  A high-level institutional examination of cross-border copyright frameworks, territorial splits between Commonwealth and North American markets, and the monetization of audio, dramatization, and translated sub-rights for non-Western literary estates.
+                </p>
+<div class="p-4 bg-surface-container-low rounded-DEFAULT">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-primary font-bold block mb-1">
+                    Course Director &amp; Proctors:
+                  </span>
+<span class="font-body-sm text-sm text-on-surface" id="page-proctors">
+                    Dr. H. M. Vandeberg (Frankfurt Book Fair Rights Guild) &amp; Claire Beaumont, KC.
+                  </span>
+</div>
+</div>
+</div>
+<!-- Left Page Folio Bottom -->
+<div class="pt-8 flex items-center justify-between font-meta-folio text-meta-folio text-on-surface-variant/60 uppercase tracking-widest">
+<span>Folio Verso</span>
+<span id="page-number-left">p. 42</span>
+</div>
+</div>
+<!-- Right Page (Recto - Takeaways & Editor's Reflection) -->
+<div class="p-8 md:p-12 flex flex-col justify-between relative bg-surface-container-low/70">
+<div>
+<!-- Running Page Head -->
+<div class="flex items-center justify-between font-meta-folio text-meta-folio text-on-surface-variant/75 uppercase tracking-widest pb-4 mb-6">
+<span>Critical Takeaways</span>
+<span>Editorial Marginalia</span>
+</div>
+<!-- Bulleted Learnings -->
+<div class="space-y-4 mb-6">
+<div class="flex items-start gap-3">
+<span class="text-primary font-bold text-sm mt-1">I.</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="takeaway-1">
+                    Splitting digital and translation rights upfront prevents territorial hold-ups and empowers Southeast Asian writers to claim fair royalties globally.
+                  </p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-primary font-bold text-sm mt-1">II.</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="takeaway-2">
+                    Option clauses must be drafted with precise sunset windows (max 60 days) to prevent authorial paralysis between subsequent manuscripts.
+                  </p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-primary font-bold text-sm mt-1">III.</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="takeaway-3">
+                    Moral rights (integrity and attribution) must remain fiercely non-negotiable, particularly when licensing into dramatized multimedia.
+                  </p>
+</div>
+</div>
+<!-- Editor's Reflection Callout (Italic Burgundy Border) -->
+<div class="p-4 bg-surface-container-lowest shadow-sm rounded-DEFAULT">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-primary font-bold flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-[15px]">edit_note</span>
+                  Editor’s Reflection
+                </span>
+<blockquote class="font-body-sm text-sm text-on-surface italic leading-relaxed" id="page-reflection">
+                  “A contract is not an adversarial instrument; when calibrated with intellectual empathy, it is the protective armor that allows dangerous literary art to survive commercial oceans.”
+                </blockquote>
+</div>
+</div>
+<!-- Right Page Folio Bottom -->
+<div class="pt-8 flex items-center justify-between font-meta-folio text-meta-folio text-on-surface-variant/60 uppercase tracking-widest">
+<span id="page-number-right">p. 43</span>
+<span>Folio Recto</span>
+</div>
+</div>
+</div>
+<!-- Book Navigation Footer Bar -->
+<div class="bg-surface-container px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+<button class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-wider text-on-surface hover:text-primary transition-colors cursor-pointer" onclick="prevSlide()">
+<span class="material-symbols-outlined text-[18px]">west</span>
+<span>⤟ Previous Spread</span>
+</button>
+<!-- Slide Counter & Dots -->
+<div class="flex items-center gap-4">
+<span class="font-meta-folio text-meta-folio uppercase tracking-widest text-on-surface-variant font-bold" id="slide-indicator">
+              Entry 1 of 4
+            </span>
+<div class="flex items-center gap-1.5" id="slide-dots">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant inline-block"></span>
+</div>
+</div>
+<button class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-wider text-on-surface hover:text-primary transition-colors cursor-pointer" onclick="nextSlide()">
+<span>Next Spread ⤑</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER VI: TESTIMONIALS & BACK-COVER ENDORSEMENTS -->
+<section class="w-full py-space-xl bg-surface" id="endorsements">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<!-- Section Chapter Banner -->
+<div class="text-center max-w-[720px] mx-auto mb-16">
+<div class="flex items-center justify-center gap-space-md mb-2">
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+<span class="font-headline-chapter text-headline-chapter text-tertiary-container uppercase tracking-widest">Chapter VI · Endorsements</span>
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-3">Praise from Authors &amp; Literary Agents</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Reflections on editorial stewardship, developmental precision, and rights diplomacy.
+        </p>
+</div>
+<!-- Three Back-Cover Blurb Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Blurb 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md flex flex-col justify-between relative group hover:shadow-lg transition-shadow">
+<div>
+<div class="text-tertiary-container font-headline-lg text-4xl mb-4 select-none">“</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-6">
+              Caroline has an uncanny, almost supernatural instinct for identifying raw diamonds hidden deep inside slush piles. She saw what my novel wanted to be long before I possessed the courage to write it. Working with her is a masterclass in creative honesty.
+            </p>
+</div>
+<div class="pt-6">
+<h4 class="font-headline-sm text-headline-sm text-primary">Julian Pramana</h4>
+<p class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant">
+              Novelist · Winner, Kusala Sastra Khatulistiwa
+            </p>
+</div>
+</div>
+<!-- Blurb 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md flex flex-col justify-between relative group hover:shadow-lg transition-shadow">
+<div>
+<div class="text-tertiary-container font-headline-lg text-4xl mb-4 select-none">“</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-6">
+              In international rights negotiations and multi-territory co-editions, Caroline is both a tenacious diplomat and a poet’s staunch advocate. Her editorial reputation in London and Frankfurt opens doors that remain bolted for others.
+            </p>
+</div>
+<div class="pt-6">
+<h4 class="font-headline-sm text-headline-sm text-primary">Marcus Sterling</h4>
+<p class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant">
+              Senior Literary Agent · Sterling &amp; Cross Literary (London)
+            </p>
+</div>
+</div>
+<!-- Blurb 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-md flex flex-col justify-between relative group hover:shadow-lg transition-shadow">
+<div>
+<div class="text-tertiary-container font-headline-lg text-4xl mb-4 select-none">“</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-6">
+              Her developmental edits never overwrite the author’s spirit; she merely polishes the mirror until the thesis reflects with absolute, blinding clarity. She made my complex archival research sing with narrative momentum.
+            </p>
+</div>
+<div class="pt-6">
+<h4 class="font-headline-sm text-headline-sm text-primary">Dr. Evelyn S. Ward</h4>
+<p class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant">
+              Historian &amp; Author · The Quiet Cartographer
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER VII: MANUSCRIPT SUBMISSION GUIDELINES & PROTOCOL -->
+<section class="w-full py-space-xl bg-surface-container-low/70" id="submission-guidelines">
+<div class="max-w-[1120px] mx-auto px-gutter">
+<!-- Section Chapter Banner -->
+<div class="text-center max-w-[720px] mx-auto mb-16">
+<div class="flex items-center justify-center gap-space-md mb-2">
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+<span class="font-headline-chapter text-headline-chapter text-tertiary-container uppercase tracking-widest">Chapter VII · Submission Protocol</span>
+<span class="w-8 h-px bg-tertiary-container/30"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-3">Submitting Your Manuscript Proposal</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          An official acquisition broadsheet for literary fiction writers, essayists, and narrative historians.
+        </p>
+</div>
+<!-- Broadsheet Style Card -->
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-xl p-8 md:p-14 max-w-[960px] mx-auto relative overflow-hidden">
+<!-- Broadsheet Decorative Corner Flourish -->
+<div class="absolute top-4 left-4 text-tertiary-container/40 text-lg select-none">❦</div>
+<div class="absolute top-4 right-4 text-tertiary-container/40 text-lg select-none">❦</div>
+<div class="absolute bottom-4 left-4 text-tertiary-container/40 text-lg select-none">❦</div>
+<div class="absolute bottom-4 right-4 text-tertiary-container/40 text-lg select-none">❦</div>
+<!-- Protocol Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Left Specs Column -->
+<div class="md:col-span-6 space-y-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+                Required Proposal Dossier
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+                We accept direct submissions from authors as well as literary representatives. Every formal dossier must contain the following components:
+              </p>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Comprehensive Synopsis:</strong> 2 to 3 pages detailing total thematic arc, conclusion, and resolution (no cliffhangers).</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Three Sample Chapters:</strong> The opening 3 consecutive chapters or initial 50 pages (approx. 10,000–12,000 words).</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Authorial Curriculum &amp; Bio:</strong> Previous publications, literary awards, academic appointments, and media footprint.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Target Readership Statement:</strong> Comparative titles published in the last five years and intended market placement.</span>
+</li>
+</ul>
+</div>
+<!-- Formatting & Turnaround Box -->
+<div class="p-5 bg-surface-container-low rounded-DEFAULT space-y-2">
+<h4 class="font-label-caps text-[11px] uppercase tracking-wider text-primary font-bold">
+                Formatting &amp; Reading Timeline
+              </h4>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                Standard book manuscript format: 12pt Times New Roman or EB Garamond, double spaced, 1-inch margins, formatted as .PDF or .DOCX. Reading turnaround is strictly <strong>4 to 6 weeks</strong>. We respond to every formal submission.
+              </p>
+</div>
+</div>
+<!-- Right Submission Action & Coordinates -->
+<div class="md:col-span-6 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">drafts</span>
+                Direct Editorial Inquiries
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Please transmit your materials directly to our acquisition desk or download the standardized editorial pitch template.
+              </p>
+<!-- Interactive Form Hook -->
+<div class="space-y-4 mb-8">
+<div>
+<label class="block font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant mb-1">Your Full Name &amp; Pen Name</label>
+<input class="w-full bg-surface-container-low px-4 py-2.5 font-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-primary rounded-DEFAULT" placeholder="e.g. Julian Pramana" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant mb-1">Project Working Title &amp; Genre</label>
+<input class="w-full bg-surface-container-low px-4 py-2.5 font-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-primary rounded-DEFAULT" placeholder="e.g. The Quiet Cartographer (Narrative History)" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant mb-1">Your Email Address</label>
+<input class="w-full bg-surface-container-low px-4 py-2.5 font-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-primary rounded-DEFAULT" placeholder="author@domain.com" type="email"/>
+</div>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="space-y-3">
+<a class="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-md hover:bg-secondary hover:text-on-secondary transition-all" href="mailto:caroline.renata@acquisitiondesk.com">
+<span class="material-symbols-outlined text-[18px]">send</span>
+                Submit Proposal via Email
+              </a>
+<button class="w-full flex items-center justify-center gap-2 px-6 py-3 bg-surface-container text-primary font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT hover:bg-surface-container-high transition-colors" onclick="downloadTemplateAlert()">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+                Download Submission Template (PDF)
+              </button>
+</div>
+</div>
+</div>
+<!-- Contact Coordinates & Direct Desk Links -->
+<div class="mt-12 pt-8 flex flex-wrap items-center justify-between gap-4 text-xs font-meta-folio uppercase tracking-widest text-on-surface-variant">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">alternate_email</span>
+              caroline.renata@acquisitiondesk.com
+            </span>
+</div>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">LinkedIn Editorial Profile ↗</a>
+<a class="hover:text-primary transition-colors" href="#">Curatorial CV (Curriculum) ↗</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CHAPTER VIII: COLOPHON & FOOTER CLOSING -->
+<section class="w-full py-12 bg-surface text-center">
+<div class="max-w-[760px] mx-auto px-gutter">
+<!-- Ex-Libris Woodcut Mark -->
+<div class="w-10 h-10 rounded-full bg-surface-container mx-auto flex items-center justify-center text-primary mb-4 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">local_library</span>
+</div>
+<!-- Formal Colophon Statement -->
+<p class="font-meta-folio text-meta-folio text-on-surface-variant uppercase tracking-widest leading-loose">
+        Typeset digitally in Playfair Display &amp; EB Garamond · Bound with ink and editorial care.<br/>
+        © MMXXIV–MMXXV Caroline Sonya Renata · All literary rights reserved worldwide.
+      </p>
+</div>
+</section>
+</div>
+<!-- CLIENT JAVASCRIPT FOR INTERACTIVE CAROUSEL & DOSSIER EXPANDERS -->
+<script>
+  // Acquisition Dossier Expansion Logic
+  function toggleDossier(id) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    if (!el) return;
+
+    if (el.classList.contains('hidden')) {
+      el.classList.remove('hidden');
+      if (icon) icon.classList.add('rotate-180');
+    } else {
+      el.classList.add('hidden');
+      if (icon) icon.classList.remove('rotate-180');
+    }
+  }
+
+  // Interactive Learning Showcase (Open Book Folio Carousel)
+  const learningModules = [
+    {
+      category: "rights",
+      catLabel: "Module 01 · Rights & Law",
+      institution: "Frankfurt Academy",
+      dateBadge: "Frankfurt Rights Masterclass · Autumn 2023",
+      title: "International Subsidiary Rights & Multi-Territory Licensing",
+      context: "A high-level institutional examination of cross-border copyright frameworks, territorial splits between Commonwealth and North American markets, and the monetization of audio, dramatization, and translated sub-rights for non-Western literary estates.",
+      proctors: "Dr. H. M. Vandeberg (Frankfurt Book Fair Rights Guild) & Claire Beaumont, KC.",
+      pageLeft: "p. 42",
+      takeaway1: "Splitting digital and translation rights upfront prevents territorial hold-ups and empowers Southeast Asian writers to claim fair royalties globally.",
+      takeaway2: "Option clauses must be drafted with precise sunset windows (max 60 days) to prevent authorial paralysis between subsequent manuscripts.",
+      takeaway3: "Moral rights (integrity and attribution) must remain fiercely non-negotiable, particularly when licensing into dramatized multimedia.",
+      reflection: "“A contract is not an adversarial instrument; when calibrated with intellectual empathy, it is the protective armor that allows dangerous literary art to survive commercial oceans.”",
+      pageRight: "p. 43"
+    },
+    {
+      category: "curation",
+      catLabel: "Module 02 · Curation",
+      institution: "Oxford Editorial Fellowship",
+      dateBadge: "Oxford Literary Institute · Summer 2022",
+      title: "The Architecture of the Canon: Lineage & Narrative Tension",
+      context: "Rigorous scholarly dissection of structural pacing in historical fiction and essay collections. Analyzing how non-linear timelines either amplify emotional resonance or induce reader fatigue.",
+      proctors: "Prof. Alistair MacIntyre (Oxford Dept. of English) & Dame Rachel Vance.",
+      pageLeft: "p. 68",
+      takeaway1: "Structural editing is forensic psychology: discovering the true epicenter of tension that the author subconsciously veiled in early drafts.",
+      takeaway2: "Economy of prose creates physical weight: removing ornamental sentences frequently triples an author's emotional authority.",
+      takeaway3: "Historical fidelity must bow to thematic honesty; anachronism of spirit is far more destructive than slight chronological compression.",
+      reflection: "“Our duty as editors is not to leave our footprints on the beach, but to smooth the sand so the author's solitary stride is unforgettable.”",
+      pageRight: "p. 69"
+    },
+    {
+      category: "market",
+      catLabel: "Module 03 · Market & Trends",
+      institution: "Yale Publishing Course",
+      dateBadge: "Yale School of Management & Publishing · 2021",
+      title: "Commercial P&L Modeling for Midlist Literary Fiction",
+      context: "Comprehensive financial modeling for independent and major trade publishing imprints. Quantifying the lifetime economic value of strong evergreen backlists over ephemeral frontlist bestsellers.",
+      proctors: "Tina C. McDowell (Former Publisher, Knopf) & Marcus Vance, MBA.",
+      pageLeft: "p. 94",
+      takeaway1: "A publishing house without an evergreen backlist is an unstable casino; steady cultural endurance generates sustainable print margins.",
+      takeaway2: "Pre-empting acquisitions requires bold editorial conviction combined with realistic unit-economics modeling.",
+      takeaway3: "Strategic academic course-adoption partnerships can extend a literary book’s active commercial lifespan from 18 months to three decades.",
+      reflection: "“The finest commercial strategy is timeless literary quality; a magnificent sentence earns compounded interest through the decades.”",
+      pageRight: "p. 95"
+    },
+    {
+      category: "digital",
+      catLabel: "Module 04 · Digital & Media",
+      institution: "London Book Fair Academy",
+      dateBadge: "London Book Fair Digital Pavilion · Spring 2024",
+      title: "Transmedia Narrative Expansions & Digital Archiving",
+      context: "Exploration of emerging digital distribution vectors, spatial audio literature adaptations, and decentralized archival repositories for endangered post-colonial minority language manuscripts.",
+      proctors: "Gideon Cross (Penguin Random House Digital) & Dr. Sheila Gupta.",
+      pageLeft: "p. 112",
+      takeaway1: "Audio editions are not mere byproducts; acoustic performance demands bespoke sentence cadences and rhythmic line trimming.",
+      takeaway2: "Digital preservation must respect vernacular nuances: typeface design and glyph encoding are human rights in minority literature.",
+      takeaway3: "Online reading communities should be treated as participatory salons rather than transactional consumer funnels.",
+      reflection: "“The physical codex remains the greatest memory machine ever engineered, yet digital channels can carry whispers across once-impassable frontiers.”",
+      pageRight: "p. 113"
+    }
+  ];
+
+  let currentSlide = 0;
+  let activeFilter = 'all';
+
+  function renderSlide() {
+    const slide = learningModules[currentSlide];
+    if (!slide) return;
+
+    document.getElementById('page-module-cat').textContent = slide.catLabel;
+    document.getElementById('page-institution').textContent = slide.institution;
+    document.getElementById('page-date-badge').textContent = slide.dateBadge;
+    document.getElementById('page-title').textContent = slide.title;
+    document.getElementById('page-context').textContent = slide.context;
+    document.getElementById('page-proctors').textContent = slide.proctors;
+    document.getElementById('page-number-left').textContent = slide.pageLeft;
+
+    document.getElementById('takeaway-1').textContent = slide.takeaway1;
+    document.getElementById('takeaway-2').textContent = slide.takeaway2;
+    document.getElementById('takeaway-3').textContent = slide.takeaway3;
+    document.getElementById('page-reflection').textContent = slide.reflection;
+    document.getElementById('page-number-right').textContent = slide.pageRight;
+
+    document.getElementById('slide-indicator').textContent = `Entry ${currentSlide + 1} of ${learningModules.length}`;
+
+    // Update Dots
+    const dotsContainer = document.getElementById('slide-dots');
+    if (dotsContainer) {
+      dotsContainer.innerHTML = learningModules.map((_, idx) => `
+        <span class="w-2.5 h-2.5 rounded-full inline-block cursor-pointer transition-colors ${idx === currentSlide ? 'bg-primary' : 'bg-surface-variant'}" onclick="goToSlide(${idx})"></span>
+      `).join('');
+    }
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % learningModules.length;
+    renderSlide();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + learningModules.length) % learningModules.length;
+    renderSlide();
+  }
+
+  function goToSlide(idx) {
+    currentSlide = idx;
+    renderSlide();
+  }
+
+  function filterModule(category) {
+    // Update filter UI pills
+    const pills = document.querySelectorAll('.mod-pill');
+    pills.forEach(p => {
+      p.classList.remove('bg-primary', 'text-on-primary');
+      p.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    const activeBtn = event.currentTarget;
+    if (activeBtn) {
+      activeBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      activeBtn.classList.add('bg-primary', 'text-on-primary');
+    }
+
+    if (category === 'all') {
+      currentSlide = 0;
+    } else {
+      const matchIndex = learningModules.findIndex(m => m.category === category);
+      if (matchIndex !== -1) {
+        currentSlide = matchIndex;
+      }
+    }
+    renderSlide();
+  }
+
+  function downloadTemplateAlert() {
+    alert("Official Acquisition Proposal Template (PDF) prepared for download. Follow submission protocol guidelines.");
+  }
+
+  // Initialize carousel on load
+  document.addEventListener('DOMContentLoaded', () => {
+    renderSlide();
+  });
+</script></main><footer class="w-full bg-surface-container-low pt-space-xl pb-space-lg"><div class="max-w-[1120px] mx-auto px-gutter flex flex-col items-center text-center"><div class="text-tertiary-container text-xl select-none mb-space-sm">❦</div><div class="font-headline-sm text-headline-sm text-primary mb-space-xs">Caroline Sonya Renata</div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-[680px] mb-space-lg italic">Mengurasi gagasan, menyunting nurani, dan merawat jejak kepustakaan sastra Nusantara dengan integritas tradisi cetak tinggi.</p><nav class="flex flex-wrap items-center justify-center gap-gutter mb-space-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="uppercase transition-colors text-primary font-semibold" data-path="profile" href="#">Profile</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="philosophy" href="#">Philosophy</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="bookshelf" href="#">Bookshelf</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="learning-showcase" href="#">Learning Showcase</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="testimonials" href="#">Testimonials</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="manuscript-guidelines" href="#">Manuscript Guidelines</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="submit-manuscript-contact" href="#">Submit / Contact</a></nav><div class="w-16 h-px bg-outline-variant/60 mb-space-md"></div><p class="font-meta-folio text-meta-folio text-on-surface-variant uppercase tracking-widest text-opacity-75">Disusun di Jakarta menggunakan rupa huruf Playfair Display dan EB Garamond · Hak cipta terpelihara © 2025</p></div></footer></body></html>
